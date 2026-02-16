@@ -1,0 +1,1966 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-E0Z53KBL2C"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-E0Z53KBL2C");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:title"
+      content="Gallery Mold - Aesthetic & Conceptual Dimensions of Modern Times"
+    />
+    <meta
+      property="og:description"
+      content="Explores the aesthetic and conceptual dimensions of modern times, bridging innovative practices."
+    />
+    <meta
+      property="og:image"
+      content="https://gallerymold.com/images/social-preview.png"
+    />
+    <meta property="og:url" content="https://gallerymold.com/" />
+    <meta property="og:type" content="website" />
+
+    <title>Gallery Mold</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="fonts/Erode_Complete/Fonts/WEB/css/erode.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" sizes="16x16" href="images/favicon.png" />
+
+    <!-- Optional: Bootstrap JS (if you need dropdowns, modals, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- YouTube Iframe API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <style>
+      .loader-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        z-index: 99999999999;
+        visibility: visible;
+      }
+
+      /* Spinner Animation */
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #ccc;
+        border-top: 5px solid #000;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.4);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      .popup-modal {
+        background-color: #fff;
+        border-radius: 10px;
+        max-width: 480px;
+        width: 90%;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        position: relative;
+        max-height: 90vh;
+        overflow-y: auto;
+        display: grid;
+      }
+
+      .popup-modal h2 {
+        margin: 0 0 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .popup-modal p {
+        font-size: 15px;
+        color: #333;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .popup-modal button {
+        padding: 10px 20px;
+        background-color: #007aff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin: 0 auto;
+      }
+
+      .popup-modal button:hover {
+        background-color: #005ecc;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 16px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #555;
+        cursor: pointer;
+      }
+
+      .close-btn:hover {
+        color: #000;
+      }
+
+      .top-center .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Optional: vertical centering */
+      }
+
+      .top-center .logo img {
+        width: 50%;
+      }
+
+      .image-modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(5px);
+        animation: fadeIn 0.3s ease-in-out;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .image-modal.show {
+        display: flex;
+      }
+
+      .image-modal img {
+        display: block;
+        max-width: 90%;
+        max-height: 90vh;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        animation: zoomIn 0.3s ease-in-out;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      @keyframes zoomIn {
+        from {
+          transform: translate(-50%, -50%) scale(0.8);
+          opacity: 0;
+        }
+        to {
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 1;
+        }
+      }
+
+      .close-modal {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 10000;
+        line-height: 1;
+      }
+
+      /* Mobile Optimizations */
+      @media screen and (max-width: 768px) {
+        .image-modal img {
+          max-width: 95%;
+          max-height: 85vh;
+          border-radius: 8px;
+        }
+
+        .close-modal {
+          top: 10px;
+          right: 10px;
+          font-size: 32px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .image-modal {
+          background-color: rgba(0, 0, 0, 0.98);
+        }
+
+        .image-modal img {
+          max-width: 98%;
+          max-height: 80vh;
+          border-radius: 6px;
+        }
+
+        .close-modal {
+          top: 8px;
+          right: 8px;
+          font-size: 28px;
+        }
+      }
+
+      /* Prevent body scroll when modal is open
+      body.modal-open {
+        overflow: hidden;
+        height: 100vh;
+      } */
+
+      .mission-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .mission-list li {
+        padding-left: 25px;
+        position: relative;
+        line-height: 1.6;
+      }
+
+      .mission-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      /* Responsive adjustments for tablets and smaller screens */
+      @media (max-width: 768px) {
+        .mission-list li::before {
+          font-size: 18px; /* Smaller bullets on tablets */
+        }
+
+        .mission-list li {
+          padding-left: 20px; /* Reduce padding for smaller screens */
+        }
+      }
+
+      /* Responsive for mobile screens */
+      @media (max-width: 480px) {
+        .mission-list li::before {
+          font-size: 16px;
+          top: 1px; /* Even smaller bullets for mobile */
+        }
+
+        .mission-list li {
+          padding-left: 15px; /* Less padding for smaller devices */
+        }
+      }
+
+      .events-image {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      .events-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .events-image img:hover {
+        transform: scale(1.02);
+      }
+
+      .top-left-icons {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .top-left-icons a {
+        color: #333;
+        font-size: 20px;
+        transition:
+          color 0.3s ease,
+          transform 0.3s ease;
+        text-decoration: none;
+      }
+
+      .top-left-icons a:hover {
+        transform: scale(1.1);
+      }
+
+      .top-left-icons a:hover .fa-instagram {
+        color: #e4405f;
+      }
+
+      .top-left-icons a:hover .fa-facebook-f {
+        color: #1877f2;
+      }
+
+      .top-left-icons a:hover .fa-whatsapp {
+        color: #25d366;
+      }
+
+      .top-left-icons a:hover .fa-x-twitter {
+        color: #000;
+      }
+      .ektava-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 9999;
+      }
+
+      .ektava-content {
+        background: #fff;
+        width: 90%;
+        max-width: 900px;
+        height: 700px;
+        margin: 5% auto;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .ektava-content iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .ektava-close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 10;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="loader" class="loader-container">
+      <div class="spinner"></div>
+    </div>
+    <div id="popup" class="popup-overlay">
+      <div class="popup-modal" id="popupModal" style="padding: 20px">
+        <div class="pop-header" style="border-bottom: 1px solid #555">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <h2 style="margin-bottom: 10px">Register for Upcoming Event!</h2>
+        </div>
+        <p style="margin-top: 20px">
+          Join us for an exciting event! Register now to save your spot.
+        </p>
+        <button onclick="window.location.href = '/contact.html'">
+          Register Now
+        </button>
+      </div>
+    </div>
+    <!-- Top Navbar -->
+    <header class="top-navbar" style="padding-left: 78px">
+      <div class="top-left">
+        <!-- <a href="#"></a> -->
+        <!-- <a href="#"><img src="images/email.png" /></a> -->
+        <!--onclick="window.location.href='contact.html'"-->
+
+        <button
+          class="booknow-btn"
+          onclick="openBookNowImage()"
+        >
+          Book Now
+        </button>
+      </div>
+      <div class="top-center">
+        <a href="index.html" class="logo"
+          ><img src="images/gallerymold-logo-mob.png"
+        /></a>
+      </div>
+      <div class="top-right">
+        <a
+          href="https://www.instagram.com/the_gallerymold?igsh=MXFmZ2VueTg3dHdlOA=="
+          target="_blank"
+          aria-label="Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/share/1FdxHAS2pW/"
+          target="_blank"
+          aria-label="Facebook"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://x.com/GalleryMold?t=FcOK1IZVj1Qe15M-XoKxvQ&s=08"
+          target="_blank"
+          aria-label="Twitter"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a
+          href="https://wa.me/919925111805"
+          target="_blank"
+          aria-label="WhatsApp"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+    </header>
+    <!-- Mobile Navbar -->
+    <header class="mobile-navbar">
+      <a href="index.html">
+        <img src="images/gallerymold-logo-mob.png" alt="Logo" class="logo"
+      /></a>
+
+      <button
+        class="booknow-btn"
+        onclick="openBookNowImage()"
+      >
+        Book Now
+      </button>
+      <div class="hamburger" id="toggleBtn">&#9776;</div>
+    </header>
+
+    <!-- Sliding Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="menu-items">
+        <li><span class="bar yellow"></span><a href="#about">About us</a></li>
+        <li>
+          <span class="bar orange"></span><a href="#exhibitions">Event</a>
+        </li>
+        <li><span class="bar blue"></span><a href="#artwork">Glimpse</a></li>
+        <li>
+          <span class="bar green"></span><a href="#contactus">Contact Us</a>
+        </li>
+
+        <!-- <button
+          class="booknow-btn"
+      onclick="window.location.href = 'https://forms.gle/TBMWoDtPCmXotu917'"
+        >
+          Book Now
+        </button> -->
+        <!-- <li><span class="bar green"></span><a href="gallery.html">gallery</a></li> -->
+      </ul>
+      <div class="top-right">
+        <a
+          href="https://www.instagram.com/the_gallerymold?igsh=MXFmZ2VueTg3dHdlOA=="
+          target="_blank"
+          aria-label="Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/share/1FdxHAS2pW/"
+          target="_blank"
+          aria-label="Facebook"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://x.com/GalleryMold?t=FcOK1IZVj1Qe15M-XoKxvQ&s=08"
+          target="_blank"
+          aria-label="Twitter"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a
+          href="https://wa.me/919925111805"
+          target="_blank"
+          aria-label="WhatsApp"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+    </div>
+    <!-- Left Sidebar -->
+    <aside class="left-sidebar">
+      <ul>
+        <li><a href="#about" class="link-1">About us</a></li>
+        <li><a href="#exhibitions" class="link-2">Event</a></li>
+        <li><a href="#artwork" class="link-3">Glimpse</a></li>
+        <li><a href="#contactus" class="link-4">Contact Us</a></li>
+        <!-- <li><a href="gallery.html" class="link-4">gallery</a></li> -->
+      </ul>
+    </aside>
+    <!-- mobile navbar -->
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Banner Section -->
+      <section class="banner-slide">
+        <div class="custom-carousel">
+          <!-- Slide 1 (Desktop + Mobile image switch) -->
+          <div class="carousel-slide active">
+            <!-- Clickable Banner -->
+            <picture id="openEktava" style="cursor: pointer">
+              <!-- Mobile -->
+              <source
+                srcset="images/hero/ekatvamob.webp"
+                media="(max-width: 767px)"
+              />
+              <!-- Desktop -->
+              <img
+                src="images/hero/ekatvaweb.webp"
+                class="img-fluid"
+                alt="Verve Banner"
+              />
+            </picture>
+
+            <!-- EKTAVA Popup -->
+            <div id="ektavaPopup" class="ektava-overlay">
+              <div class="ektava-content">
+                <span class="ektava-close">&times;</span>
+
+                <iframe
+                  src="https://app.simplymeet.me/gallerymold/1767859979?is_widget=1&view=compact&specific-meeting-type=1"
+                  frameborder="0"
+                  scrolling="yes"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 1 (Desktop + Mobile image switch) -->
+          <div class="carousel-slide">
+            <picture>
+              <!-- Mobile -->
+              <source
+                srcset="images/hero/vervemob.webp"
+                media="(max-width: 767px)"
+              />
+              <!-- Desktop -->
+              <img
+                src="images/hero/verve-banner.webp"
+                class="img-fluid"
+                alt="Verve Banner"
+              />
+            </picture>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <img src="images/hero/1.webp" class="img-fluid" alt="Slide 2" />
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <img src="images/hero/2.webp" class="img-fluid" alt="Slide 3" />
+          </div>
+
+          <!-- Arrows -->
+          <button class="arrow left">
+            <img src="images/left-arrow.png" alt="Previous" />
+          </button>
+          <button class="arrow right">
+            <img src="images/right-arrow.png" alt="Next" />
+          </button>
+
+          <!-- Dots -->
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Glimpsees Section -->
+      <section class="art-section" id="art" style="display: none">
+        <div class="art-top text-center mb-4">
+          <h2>Glimpsees</h2>
+          <p>Crafted with passion & creativity !</p>
+        </div>
+        <div class="container-fluid">
+          <!-- First Row: Single Full-Width Image -->
+          <div class="row art-row mb-3">
+            <div class="col-12">
+              <div class="art-img-wrapper">
+                <img
+                  src="images/art-work-1-min.png"
+                  class="img-fluid art-img"
+                  alt="Art 1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Row: Three Images Side by Side -->
+          <div class="row g-3">
+            <div class="col-md-8">
+              <div class="art-img-wrapper">
+                <img
+                  src="images/art-work-2-min.png"
+                  class="img-fluid art-img"
+                  alt="Art 2"
+                  height="515px"
+                />
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="art-img-wrapper">
+                <img
+                  src="images/art-work-3-min.png"
+                  class="img-fluid art-img"
+                  alt="Art 3"
+                />
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="art-img-wrapper">
+                <img
+                  src="images/art-work-4-min.png"
+                  class="img-fluid art-img"
+                  alt="Art 4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section class="about-us" id="about">
+        <div class="row">
+          <div class="about-img col-md-5 col-sm-12">
+            <img src="images/about1.webp" class="img-fluid" />
+          </div>
+          <div class="about-content col-md-6 col-sm-12">
+            <h2>About us</h2>
+            <!-- <img src="images/about_tag.png" class="img-fluid tag-img" /> -->
+            <h3>
+              A curated space for art, design, and luxury brand experiences.
+            </h3>
+            <p>
+              Gallery MOLD is Vadodara’s new-age gallery space, showcasing
+              exclusive and high-end exhibitions across art, design, and
+              architecture. It hosts immersive installations, contemporary art
+              displays, and experimental media, providing a premier platform for
+              both emerging and established artists.
+            </p>
+            <!-- <p>
+           Beyond art, MOLD curates exclusive collaborations with luxury brands, architects, and designers to host product launches, conceptual showcases, and seasonal drops. Every project is handpicked to reflect the gallery’s refined aesthetic, spatial sophistication, and commitment to innovation.
+          </p> -->
+            <p>
+              Beyond art, MOLD curates exclusive collaborations with luxury
+              brands, architects, and designers to host product launches,
+              conceptual showcases, and seasonal drops. Every project is
+              handpicked to reflect the gallery’s refined aesthetic, spatial
+              sophistication, and commitment to innovation.
+            </p>
+            <button
+              class="artist-btn"
+              onclick="window.location.href = 'about.html'"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery Space Section -->
+      <section class="gallery-space" id="gallery">
+        <div class="row">
+          <div class="gallery-content col-md-6 col-sm-12">
+            <h2>Inside Gallery Mold</h2>
+            <h3>An art space defined by sophistication and purpose.</h3>
+            <ul class="features-list">
+              <li class="feature-item">
+                <!-- <div class="feature-icon">📍</div> -->
+                <div class="feature-text">
+                  <strong>Prime Location</strong>
+                  <p>
+                    In Alkapuri Racecourse, Vadodara's most prestigious area.
+                  </p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <!-- <div class="feature-icon">📐</div> -->
+                <div class="feature-text">
+                  <strong>Spacious Layout</strong>
+                  <p>1,200 sq. ft. of pillar-free exhibition space.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <!-- <div class="feature-icon">✨</div> -->
+                <div class="feature-text">
+                  <strong>Refined Interiors</strong>
+                  <p>
+                    Wooden flooring, curated lighting, and glass walls with
+                    green views.
+                  </p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <!-- <div class="feature-icon">🅿️</div> -->
+                <div class="feature-text">
+                  <strong>Luxury Amenities</strong>
+                  <p>
+                    Valet parking, private trial rooms, and modern washrooms.
+                  </p>
+                </div>
+              </li>
+              <!-- <li class="feature-item">
+                <div class="feature-icon">💻</div>
+                <div class="feature-text">
+                  <strong>Tech-Enabled</strong>
+                  <p>Ready for custom installations and digital setups.</p>
+                </div>
+              </li> -->
+              <li class="feature-item">
+                <!-- <div class="feature-icon">🎬</div> -->
+                <div class="feature-text">
+                  <strong>In-House Production</strong>
+                  <p>Professional photo and video facilities.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <!-- <div class="feature-icon">🔒</div> -->
+                <div class="feature-text">
+                  <strong>Advanced Security</strong>
+                  <p>CCTV and anti-theft systems for safety.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="aboutspace-img col-md-5 col-sm-12">
+            <img src="images/inside2.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission/Vision Section -->
+      <section class="mission-vision-section">
+        <!-- <div class="mission-vision-header">
+          <h2>Inside Gallery Mold</h2>
+          <p>Guiding principles that shape our journey!</p>
+        </div> -->
+
+        <div class="mission-vision-content">
+          <div class="mission-box">
+            <h3>Vision & Mission</h3>
+            <ul class="mission-list">
+              <li>To amplify the voices of young and emerging artists.</li>
+              <li>
+                Provide opportunities for experimentation, learning, and growth.
+              </li>
+              <li>
+                Support artists, designers and businesses at critical career
+                junctures and to build the cultural landscape for the city of
+                Vadodara.
+              </li>
+              <li>
+                Collaborations with artists, curators, designers and selected
+                businesses.
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="vision-box">
+            <h3>Vision</h3>
+            <ul class="mission-list">
+              <li>To amplify the voices of young and emerging artists.</li>
+              <li>
+                Provide opportunities for experimentation, learning, and growth.
+              </li>
+              <li>
+                Support artists, designers and businesses at critical career
+                junctures and to build the cultural landscape for the city of
+                Vadodara.
+              </li>
+              <li>
+                Collaborations with artists, curators, designers and selected
+                businesses.
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- Exhibitions Section -->
+       <section class="eventscarusal-section" id="exhibitions">
+        <div class="eventscarusal-section-top">
+          <h2>Events</h2>
+          <p>Explore our calendar of artistic experiences.</p>
+        </div>
+
+  <!-- Dynamic Exhibition Slider -->
+   <div id="exhibition-slider" class="slider">
+    <p style="text-align:center; padding:50px;">
+      Loading exhibitions...
+    </p>
+  </div>
+</section>
+      <!-- Swiper Container -->
+      <!-- <div class="swiper eventSwiper">
+        <div class="swiper-wrapper">
+         
+          <div class="swiper-slide">
+            <a href="gallery.html" style="text-decoration: none">
+              <img
+                src="images/events/banner-1-1-min.png"
+                class="img-fluid object-cover"
+                alt="Event 1"
+              />
+          
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="gallery.html" style="text-decoration: none">
+              <img
+                src="images/events/image.png"
+                class="img-fluid object-cover"
+                alt="Event 2"
+              />
+              
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="gallery.html" style="text-decoration: none">
+              <img
+                src="images/events/coming-soon-event.webp"
+                class="img-fluid object-cover"
+                alt="Event 3"
+              />
+             
+            </a>
+          </div>
+        </div>
+
+    
+        <div class="swiper-pagination"></div>
+        </div> -->
+      <!-- Artwork Slider Section -->
+      <section class="glimpse-section" id="artwork">
+        <h2>Glimpse</h2>
+        <p>A glance at the ideas and moments that define Gallery MOLD.</p>
+        
+        <div id="glimpse-gallery" class="glimpse-gallery">
+          <p style="text-align: center;">Loading gallery...</p>
+        </div>
+      </section>
+      
+
+        <!-- Swiper Container -->
+        <div class="swiper artworkSwiper">
+          <div class="swiper-wrapper">
+            <!-- Artwork Card 1 -->
+            <div class="swiper-slide">
+              <img
+                src="images/curated/1.webp"
+                alt="Artwork 1"
+                class="artwork-image"
+              />
+              <div class="artwork-info" style="display: none">
+                <div class="artwork-title">Abstract Expressions</div>
+                <div class="artwork-artist">Artist: Sameer Patel</div>
+                <a href="#" class="buy-now-btn">Inquire Now</a>
+              </div>
+            </div>
+
+            <!-- Artwork Card 2 -->
+            <div class="swiper-slide">
+              <img
+                src="images/curated/2.webp"
+                alt="Artwork 2"
+                class="artwork-image"
+              />
+              <div class="artwork-info" style="display: none">
+                <div class="artwork-title">Urban Landscapes</div>
+                <div class="artwork-artist">Artist: Priya Shah</div>
+                <!-- <a href="#" class="buy-now-btn">Inquire Now</a> -->
+              </div>
+            </div>
+
+            <!-- Artwork Card 3 -->
+            <div class="swiper-slide">
+              <img
+                src="images/curated/3.webp"
+                alt="Artwork 3"
+                class="artwork-image"
+              />
+              <div class="artwork-info" style="display: none">
+                <div class="artwork-title">Nature's Palette</div>
+                <div class="artwork-artist">Artist: Kumar Krishna</div>
+                <!-- <a href="#" class="buy-now-btn">Inquire Now</a> -->
+              </div>
+            </div>
+
+            <!-- Artwork Card 4 -->
+            <!-- <div class="swiper-slide">
+              <img
+                src="images/curated/4.webp"
+                alt="Artwork 4"
+                class="artwork-image"
+              />
+              <div class="artwork-info" style="display: none">
+                <div class="artwork-title">Contemporary Forms</div>
+                <div class="artwork-artist">Artist: Snehal Pradhan</div>
+          
+              </div>
+            </div> -->
+
+            <!-- Artwork Card 5 -->
+            <div class="swiper-slide">
+              <img
+                src="images/curated/5.webp"
+                alt="Artwork 5"
+                class="artwork-image"
+              />
+              <div class="artwork-info" style="display: none">
+                <div class="artwork-title">Vibrant Visions</div>
+                <div class="artwork-artist">Artist: Eva Joy</div>
+                <!-- <a href="#" class="buy-now-btn">Buy Now</a> -->
+              </div>
+            </div>
+
+            <!-- Artwork Card 6 -->
+            <!-- <div class="swiper-slide">
+              <img
+                src="images/curated/6.webp"
+                alt="Artwork 6"
+                class="artwork-image"
+              />
+              <div class="artwork-info" style="display: none">
+                <div class="artwork-title">Mixed Media Magic</div>
+                <div class="artwork-artist">Artist: Nidhi Sabhaya</div>
+
+              </div>
+            </div> -->
+            <!-- Artwork Card 7 -->
+            <!-- <div class="swiper-slide">
+              <img
+                src="images/curated/7.webp"
+                alt="Artwork 7"
+                class="artwork-image"
+              />
+              <div class="artwork-info" style="display: none">
+                <div class="artwork-title">Mixed Media Magic</div>
+                <div class="artwork-artist">Artist: Nidhi Sabhaya</div>
+               
+              </div>
+            </div> -->
+            <!-- Artwork Card 8 -->
+            <div class="swiper-slide">
+              <img
+                src="images/curated/8.webp"
+                alt="Artwork 8"
+                class="artwork-image"
+              />
+              <div class="artwork-info" style="display: none">
+                <div class="artwork-title">Mixed Media Magic</div>
+                <div class="artwork-artist">Artist: Nidhi Sabhaya</div>
+                <!-- <a href="#" class="buy-now-btn">Buy Now</a> -->
+              </div>
+            </div>
+            <!-- Artwork Card 9 -->
+            <div class="swiper-slide">
+              <img
+                src="images/curated/9.webp"
+                alt="Artwork 9"
+                class="artwork-image"
+              />
+              <div class="artwork-info" style="display: none">
+                <div class="artwork-title">Mixed Media Magic</div>
+                <div class="artwork-artist">Artist: Nidhi Sabhaya</div>
+                <!-- <a href="#" class="buy-now-btn">Buy Now</a> -->
+              </div>
+            </div>
+            <!-- Artwork Card 10 -->
+            <div class="swiper-slide">
+              <img
+                src="images/curated/10.webp"
+                alt="Artwork 10"
+                class="artwork-image"
+              />
+              <div class="artwork-info" style="display: none">
+                <div class="artwork-title">Mixed Media Magic</div>
+                <div class="artwork-artist">Artist: Nidhi Sabhaya</div>
+                <!-- <a href="#" class="buy-now-btn">Buy Now</a> -->
+              </div>
+            </div>
+            <!-- Artwork Card 11 -->
+            <div class="swiper-slide">
+              <img
+                src="images/curated/11.webp"
+                alt="Artwork 11"
+                class="artwork-image"
+              />
+              <div class="artwork-info" style="display: none">
+                <div class="artwork-title">Mixed Media Magic</div>
+                <div class="artwork-artist">Artist: Nidhi Sabhaya</div>
+                <!-- <a href="#" class="buy-now-btn">Buy Now</a> -->
+              </div>
+            </div>
+            <!-- Artwork Card 12 -->
+            <div class="swiper-slide">
+              <img
+                src="images/curated/12.webp"
+                alt="Artwork 12"
+                class="artwork-image"
+              />
+              <div class="artwork-info" style="display: none">
+                <div class="artwork-title">Mixed Media Magic</div>
+                <div class="artwork-artist">Artist: Nidhi Sabhaya</div>
+                <!-- <a href="#" class="buy-now-btn">Buy Now</a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- <button class="artist-btn">
+          <a href="gallery.html" style="text-decoration: none; color: #fff">View All
+          </a>
+        </button> -->
+
+          <!-- Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <div id="imageModal" class="image-modal">
+          <span class="close-modal">&times;</span>
+          <img class="modal-content" id="fullImage" />
+        </div>
+        <!-- View All Button -->
+      </section>
+
+      <!-- Artist Section disply none -->
+      <section class="artist-section" id="artist" style="display: none">
+        <div class="artist-top">
+          <h2>Artists</h2>
+          <p>Minds behind the masterpieces!</p>
+        </div>
+
+        <!-- Swiper Container -->
+        <div class="swiper artistSwiper">
+          <div class="swiper-wrapper">
+            <!-- Each Artist Card -->
+            <div class="swiper-slide">
+              <img
+                src="images/artist/asish-das.webp"
+                class="img-fluid object-cover"
+                alt="Art 2"
+              />
+              <div class="name-box">Asish Das</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/artist/chander-p.webp"
+                class="img-fluid object-cover"
+                alt="Art 3"
+              />
+              <div class="name-box">Chander P</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/artist/clinton.webp"
+                class="img-fluid object-cover"
+                alt="Art 4"
+              />
+              <div class="name-box">Clinton</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/artist/dushyant.webp"
+                class="img-fluid object-cover"
+                alt="Art 4"
+              />
+              <div class="name-box">Dushyant</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/artist/hiren.webp"
+                class="img-fluid object-cover"
+                alt="Art 4"
+              />
+              <div class="name-box">Hiren</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/artist/jithin.webp"
+                class="img-fluid object-cover"
+                alt="Art 4"
+              />
+              <div class="name-box">Jithin</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/artist/nalinakshya.webp"
+                class="img-fluid object-cover"
+                alt="Art 4"
+              />
+              <div class="name-box">Nalinakshya</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/artist/sangam.webp"
+                class="img-fluid object-cover"
+                alt="Art 4"
+              />
+              <div class="name-box">Sangam</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/artist/sugin.webp"
+                class="img-fluid object-cover"
+                alt="Art 4"
+              />
+              <div class="name-box">Sugin</div>
+            </div>
+          </div>
+
+          <!-- Navigation + Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Youtube Shorts Section -->
+      <section class="ytcarusal-section" id="ytGlimpse">
+        <div class="ytcarusal-section-top">
+          <h2>Youtube Shorts</h2>
+          <p>Discover upcoming events / exhibitions!</p>
+        </div>
+
+        <!-- Swiper Container -->
+        <div class="swiper ytSwiper" style="max-width: 1400px">
+          <div class="swiper-wrapper">
+            <!-- Each Event Card -->
+            <div
+              class="swiper-slide"
+              style="height: 500px !important ; width: 100% !important"
+            >
+              <iframe
+                src="https://www.youtube.com/embed/Mv5zN7IzZKY?enablejsapi=1&rel=0"
+                width="100%"
+                height="100%"
+                allow="autoplay; encrypted-media"
+              >
+              </iframe>
+            </div>
+
+            <div class="swiper-slide" style="height: 500px !important">
+              <iframe
+                src="https://www.youtube.com/embed/3eiIijXCDPM?enablejsapi=1&rel=0"
+                width="100%"
+                height="100%"
+                allow="autoplay; encrypted-media"
+              >
+              </iframe>
+            </div>
+
+            <div class="swiper-slide" style="height: 500px !important">
+              <iframe
+                src="https://www.youtube.com/embed/7mC823KWKY0?enablejsapi=1&rel=0"
+                width="100%"
+                height="100%"
+                allow="autoplay; encrypted-media"
+              >
+              </iframe>
+            </div>
+            <div class="swiper-slide" style="height: 500px !important">
+              <iframe
+                src="https://www.youtube.com/embed/6DBRF_H-wY0?enablejsapi=1&rel=0"
+                width="100%"
+                height="100%"
+                allow="autoplay; encrypted-media"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <!-- Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Art Section -->
+      <section class="art-section" id="art" style="display: none">
+        <div class="art-top text-center mb-4">
+          <h2>Art Works</h2>
+          <p>Crafted with passion & creativity !</p>
+        </div>
+        <div class="container-fluid">
+          <!-- First Row: Single Full-Width Image -->
+          <div class="row art-row mb-3">
+            <div class="col-12">
+              <div class="art-img-wrapper">
+                <img
+                  src="images/art-work-1-min.png"
+                  class="img-fluid art-img"
+                  alt="Art 1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Row: Three Images Side by Side -->
+          <div class="row g-3">
+            <div class="col-md-8">
+              <div class="art-img-wrapper">
+                <img
+                  src="images/art-work-2-min.png"
+                  class="img-fluid art-img"
+                  alt="Art 2"
+                  height="515px"
+                />
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="art-img-wrapper">
+                <img
+                  src="images/art-work-3-min.png"
+                  class="img-fluid art-img"
+                  alt="Art 3"
+                />
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="art-img-wrapper">
+                <img
+                  src="images/art-work-4-min.png"
+                  class="img-fluid art-img"
+                  alt="Art 4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Events Section -->
+      <section class="art-section" id="event" style="display: none">
+        <div class="art-top">
+          <h2>Events</h2>
+          <p>Discover upcoming events / exhibitions!</p>
+        </div>
+        <div class="container-fluid">
+          <!-- First Row: Single Full-Width Image -->
+          <div class="row art-row">
+            <div class="col-12">
+              <div class="art-img-wrapper">
+                <img
+                  src="images/hero-4-min.png"
+                  class="img-fluid"
+                  alt="Art 1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Row: Three Images Side by Side -->
+          <div class="row g-3 row-equal">
+            <div class="col-lg-3">
+              <img
+                src="images/akash-bhoya-min.jpg"
+                class="img-fluid object-cover"
+                alt="Art 2"
+              />
+              <div class="name-box">Akash Bhoya</div>
+            </div>
+            <div class="col-lg-3">
+              <img
+                src="images/archana-singh-min.jpg"
+                class="img-fluid object-cover"
+                alt="Art 3"
+              />
+              <div class="name-box">Archana Singh</div>
+            </div>
+            <div class="col-lg-3">
+              <img
+                src="images/deepika-sakhat-min.jpg"
+                class="img-fluid object-cover"
+                alt="Art 4"
+              />
+              <div class="name-box">Deepika Sakhat</div>
+            </div>
+            <div class="col-lg-3">
+              <img
+                src="images/pratima-tandel-min.jpg"
+                class="img-fluid object-cover"
+                alt="Art 4"
+              />
+              <div class="name-box">Pratima Tandel</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Promotion Section -->
+      <section class="promotion-section" id="promo" style="display: none">
+        <div class="promo-top">
+          <h2>Promotions</h2>
+          <p>Curated to inspire & captivate!</p>
+        </div>
+        <div class="promo-content">
+          <div class="art-img-wrapper">
+            <img src="images/neo-baroda.png" class="image-neo" />
+          </div>
+          <h2>
+            Neo Baroda is an artistic community and collective that supports
+            writers and artists, promotes free
+          </h2>
+          <a
+            href="#"
+            class="text-center"
+            style="color: blue"
+            data-bs-toggle="modal"
+            data-bs-target="#readMoreModal"
+            >read more</a
+          >
+        </div>
+      </section>
+      <div
+        class="modal fade"
+        id="readMoreModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+        style="z-index: 999999999"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Neo Baroda</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Neo Baroda is an artistic community and collective that supports
+              writers and artists, promotes free expression, and accommodates
+              students and young practitioners. A self-sufficient community with
+              autonomy, knowledge accessibility, and information distribution is
+              their goal. Through workshops, podcasts, animations, interviews,
+              and various happenings, they seek to collect, share, and
+              contextualize and recontextualize information within the
+              community, with the aspect of encouraging freedom of expression.
+              Establishing sustainable methods to foster a sense of community
+              among young artists, writers, curators, performers, designers, and
+              historians forms the core of their mission. This collaborative
+              setting promotes multidisciplinary development, resource sharing,
+              and equitable idea growth in the community. Their active
+              engagement on social media reflects their cultural environment to
+              improve understanding in creative sectors.
+            </div>
+            <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+          </div>
+        </div>
+      </div>
+      <section class="artist-section" id="contactus">
+        <div class="artist-top">
+          <h2>Art that Connects</h2>
+          <p>Stay connected Stay inspired</p>
+          <button
+            class="artist-btn"
+            onclick="window.location.href = 'contact.html'"
+          >
+            Contact Us
+          </button>
+        </div>
+      </section>
+
+      <footer class="footer-section" id="contact">
+        <div class="row footer-top">
+          <div class="col-lg-3 mb-4">
+            <img
+              src="images/mold-footer-logo.png"
+              alt="Gallery Mold Logo"
+              class="mb-3 mt-3 footer-logo"
+              style="max-width: 150px"
+            />
+            <p class="footer-text"></p>
+          </div>
+
+          <div class="col-lg-3 mb-4 sitemap">
+            <h5 class="footer-heading"><span>s</span>ite map</h5>
+            <ul class="list-unstyled">
+              <!-- <li><a href="#artwork">ART WORKS</a></li>
+              <li><a href="#exhibitions">EXHIBITIONS</a></li>
+              <li><a href="#ytGlimpse">Glimpse</a></li>
+              <li><a href="#event">EVENTS</a></li>
+              <li><a href="contact.html">CONTACT</a></li> -->
+
+              <li><a href="#about">ABOUT US</a></li>
+              <li><a href="#exhibitions">EVENT</a></li>
+              <li><a href="#artwork">Glimpse</a></li>
+              <li><a href="#contactus">CONTACT</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 mb-4">
+            <h5 class="footer-heading"><span>c</span>ontact</h5>
+            <p style="margin-bottom: 0">
+              <a href="mailto:thegallerymold@gmail.com"
+                >thegallerymold@gmail.com</a
+              >
+            </p>
+            <p><a href="tel:+919925111805">+91 9925111805</a></p>
+          </div>
+
+          <div class="col-lg-3 address">
+            <h5 class="footer-heading"><span>a</span>ddress</h5>
+            <p>
+              Ground Floor, Naman House, Race Course,<br />Vadodara, Gujarat
+              390007
+            </p>
+            <a href="https://g.co/kgs/Zw49HVQ" target="_blank">
+              <span class="icon">
+                <i class="fa-solid fa-location-dot"></i> </span
+              >GET DIRECTION</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom text-center py-3">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+          >
+            <p class="mb-2 mb-md-0">
+              © Gallery Mold. Developed by
+              <a href="https://diwizon.com/" target="_blank" class="diwizon"
+                >Diwizon.</a
+              >
+            </p>
+            <!-- <div class="footer-social">
+              <a
+                href="https://www.instagram.com/the_gallerymold/"
+                target="_blank"
+                ><img
+                  src="images/instagram.svg"
+                  alt="Instagram"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/linkedin.svg"
+                  alt="LinkedIn"
+                  class="social-icon"
+              /></a>
+            </div> -->
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script>
+      function showLoaderAndRedirect(url) {
+        const loader = document.getElementById("loader");
+        if (loader) {
+          loader.style.display = "flex";
+          loader.style.visibility = "visible";
+        }
+
+        // Optional delay for loader to appear
+        setTimeout(() => {
+          window.location.href = url;
+        }, 100);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const loader = document.getElementById("loader");
+        if (loader) {
+          loader.style.display = "flex";
+          loader.style.visibility = "visible";
+        }
+
+        // Simulated page loading time
+        setTimeout(() => {
+          if (loader) {
+            loader.style.display = "none";
+          }
+        }, 2000);
+
+        // Check redirect condition on initial load
+      });
+    </script>
+    <script>
+      const slides = document.querySelectorAll(".carousel-slide");
+      const dots = document.querySelectorAll(".dot");
+      const leftBtn = document.querySelector(".arrow.left");
+      const rightBtn = document.querySelector(".arrow.right");
+      let index = 0;
+
+      function showSlide(i) {
+        slides.forEach((slide, idx) => {
+          slide.classList.toggle("active", idx === i);
+          dots[idx].classList.toggle("active", idx === i);
+        });
+      }
+
+      leftBtn.addEventListener("click", () => {
+        index = (index - 1 + slides.length) % slides.length;
+        showSlide(index);
+      });
+
+      rightBtn.addEventListener("click", () => {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+      });
+
+      dots.forEach((dot, idx) => {
+        dot.addEventListener("click", () => {
+          index = idx;
+          showSlide(index);
+        });
+      });
+    </script>
+
+    <script>
+      const artistSlider = document.getElementById("artistSliderTrack");
+      const artistSliderDotsContainer =
+        document.getElementById("artistSliderDots");
+      const artistSliderSlides = document.querySelectorAll(
+        ".artistSlider-slide",
+      );
+
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      // Drag-to-scroll
+      artistSlider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        startX = e.pageX - artistSlider.offsetLeft;
+        scrollLeft = artistSlider.scrollLeft;
+      });
+
+      artistSlider.addEventListener("mouseleave", () => {
+        isDown = false;
+      });
+      artistSlider.addEventListener("mouseup", () => {
+        isDown = false;
+      });
+
+      artistSlider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - artistSlider.offsetLeft;
+        const walk = (x - startX) * 2;
+        artistSlider.scrollLeft = scrollLeft - walk;
+      });
+
+      // Helper to calculate how many slides are visible per view
+      function getVisibleSlides() {
+        const slideWidth = artistSliderSlides[0].getBoundingClientRect().width;
+        return Math.floor(artistSlider.offsetWidth / slideWidth);
+      }
+
+      // Render dots based on visible slides
+      function renderArtistSliderDots() {
+        artistSliderDotsContainer.innerHTML = "";
+        const visibleSlides = getVisibleSlides();
+        const totalDots = Math.ceil(artistSliderSlides.length / visibleSlides);
+
+        for (let i = 0; i < totalDots; i++) {
+          const dot = document.createElement("div");
+          dot.classList.add("artistSlider-dot");
+          if (i === 0) dot.classList.add("active");
+          dot.addEventListener("click", () => {
+            const scrollAmount = i * artistSlider.offsetWidth;
+            artistSlider.scrollTo({
+              left: scrollAmount,
+              behavior: "smooth",
+            });
+          });
+          artistSliderDotsContainer.appendChild(dot);
+        }
+      }
+
+      // Update active dot
+      function updateArtistSliderDots() {
+        const index = Math.round(
+          artistSlider.scrollLeft / artistSlider.offsetWidth,
+        );
+        document.querySelectorAll(".artistSlider-dot").forEach((dot, i) => {
+          dot.classList.toggle("active", i === index);
+        });
+      }
+
+      // Initial load
+      renderArtistSliderDots();
+
+      // Recalculate on window resize
+      window.addEventListener("resize", renderArtistSliderDots);
+
+      // Sync active dot on scroll
+      artistSlider.addEventListener("scroll", updateArtistSliderDots);
+    </script>
+    <!-- <script>
+      window.onload = () => {
+        const popup = document.getElementById("popup");
+        const closeBtn = document.getElementById("closeBtn");
+
+        // Wait 5 seconds before showing the popup
+        setTimeout(() => {
+          popup.style.display = "flex";
+          document.body.style.overflow = "hidden";
+        }, 5000); // 5000ms = 5 seconds
+
+        // Close on close button
+        closeBtn.onclick = () => {
+          popup.style.display = "none";
+          document.body.style.overflow = "auto";
+        };
+
+        // Close when clicking outside modal
+        popup.onclick = (e) => {
+          if (e.target === popup) {
+            popup.style.display = "none";
+            document.body.style.overflow = "auto";
+          }
+        };
+      };
+    </script> -->
+
+    <script>
+      $("#readMoreModal").on("show.bs.modal", function () {
+        $("body").addClass("modal-open");
+      });
+
+      $("#readMoreModal").on("hidden.bs.modal", function () {
+        $("body").removeClass("modal-open");
+      });
+    </script>
+    <script>
+      const toggleBtn = document.getElementById("toggleBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const mobileNavbar = document.querySelector(".mobile-navbar");
+      const menuLinks = mobileMenu.querySelectorAll("a"); // Select all anchor tags inside mobileMenu
+
+      let isOpen = false;
+
+      toggleBtn.addEventListener("click", () => {
+        isOpen = !isOpen;
+        if (isOpen) {
+          mobileMenu.style.right = "0";
+          mobileNavbar.style.display = "none";
+        } else {
+          mobileMenu.style.right = "-100%";
+          mobileNavbar.style.display = "flex";
+        }
+      });
+
+      // Close the menu when any link is clicked
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          isOpen = false;
+          mobileMenu.style.right = "-100%";
+          mobileNavbar.style.display = "flex";
+        });
+      });
+    </script>
+
+    <script>
+      var swiper = new Swiper(".artistSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        breakpoints: {
+          320: { slidesPerView: 2 },
+          576: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          992: { slidesPerView: 4 },
+        },
+      });
+      var swiper = new Swiper(".eventSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        breakpoints: {
+          320: { slidesPerView: 1 },
+          576: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          992: { slidesPerView: 3 },
+        },
+      });
+      // Get modal elements
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("fullImage");
+      const closeModal = document.querySelector(".close-modal");
+
+      // Add click event to all images
+      document.querySelectorAll(".artwork-image").forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+      });
+
+      // Close modal on "X"
+      closeModal.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+
+      // Close modal when clicking outside the image
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) modal.style.display = "none";
+      });
+
+      // Initialize Artwork Swiper
+      const artworkSwiper = new Swiper(".artworkSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000, // time between slides in ms (3 seconds)
+          disableOnInteraction: false, // keeps autoplay running after user interaction
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 25,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      });
+      var swiper = new Swiper(".ytSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        grabCursor: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1400: { slidesPerView: 4 }, // XL desktops
+          992: { slidesPerView: 3 }, // desktops
+          768: { slidesPerView: 2 }, // tablets
+          576: { slidesPerView: 1.5 }, // small phones (shows 1½ slides)
+          0: { slidesPerView: 1 }, // extra small (<=480)
+        },
+      });
+
+      // YouTube players control: ensure only one plays at a time
+      var ytPlayers = [];
+      function onYouTubeIframeAPIReady() {
+        var ytIframes = document.querySelectorAll(".ytSwiper iframe");
+        ytIframes.forEach(function (iframe) {
+          try {
+            var player = new YT.Player(iframe, {
+              events: {
+                onStateChange: onPlayerStateChange,
+              },
+            });
+            ytPlayers.push(player);
+          } catch (e) {}
+        });
+      }
+
+      function onPlayerStateChange(event) {
+        if (event.data === YT.PlayerState.PLAYING) {
+          ytPlayers.forEach(function (p) {
+            if (p !== event.target) {
+              try {
+                p.pauseVideo();
+              } catch (e) {}
+            }
+          });
+        }
+      }
+
+      function pauseAllYtVideos() {
+        ytPlayers.forEach(function (p) {
+          try {
+            p.pauseVideo();
+          } catch (e) {}
+        });
+      }
+
+      // Pause on slide change/move for safety
+      if (
+        typeof swiper !== "undefined" &&
+        swiper &&
+        swiper.el &&
+        swiper.el.classList.contains("ytSwiper")
+      ) {
+        swiper.on("slideChange", pauseAllYtVideos);
+        swiper.on("touchStart", pauseAllYtVideos);
+        swiper.on("transitionStart", pauseAllYtVideos);
+      }
+      function openBookNowImage() {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("fullImage");
+        if (modal && modalImg) {
+          modalImg.src = "images/PUTTTTT.jpg";
+          modal.style.display = "block";
+        }
+      }
+    </script>
+    //
+    <script>
+      //   const openEktava = document.getElementById("openEktava");
+      //   const ektavaPopup = document.getElementById("ektavaPopup");
+      //   const closeEktava = document.querySelector(".ektava-close");
+
+      //   openEktava.onclick = () => (ektavaPopup.style.display = "block");
+      //   closeEktava.onclick = () => (ektavaPopup.style.display = "none");
+
+      //   // Close when clicking outside content
+      //   ektavaPopup.onclick = (e) => {
+      //     if (e.target === ektavaPopup) {
+      //       ektavaPopup.style.display = "none";
+      //     }
+      //   };
+      //
+    </script>
+
+    <!-- Firebase Core -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+<!-- Your Config -->
+<script src="js/cloudinary-config.js"></script>
+<script src="js/firebase.js"></script>
+
+<!-- Feature Scripts -->
+<script src="js/events.js"></script>
+<script src="js/glimpse.js"></script>
+
+
+  </body>
+</html>

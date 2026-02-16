@@ -1,0 +1,1224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-E0Z53KBL2C"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-E0Z53KBL2C");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="About Us - Gallery Mold" />
+    <meta
+      property="og:description"
+      content="Learn about Gallery Mold's mission to bridge innovative art practices with contemporary aesthetics."
+    />
+    <meta
+      property="og:image"
+      content="https://gallerymold.com/images/social-preview.png"
+    />
+    <meta property="og:url" content="https://gallerymold.com/about.html" />
+    <meta property="og:type" content="website" />
+
+    <title>About Us - Gallery Mold</title>
+    <link
+      rel="stylesheet"
+      href="fonts/Erode_Complete/Fonts/WEB/css/erode.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" sizes="16x16" href="images/favicon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="fonts/Erode_Complete/Fonts/WEB/css/erode.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="icon" sizes="16x16" href="images/favicon.png" />
+
+    <!-- Optional: Bootstrap JS (if you need dropdowns, modals, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      h1,
+      h2,
+      h3 {
+        font-family: "Erode-Variable", "Erode", serif !important;
+        font-weight: 600;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        background: #fff;
+        font-family: "Barlow", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+      }
+
+      ul {
+        padding-left: 0 !important;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      /* Loader */
+      .loader-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        z-index: 99999;
+        visibility: visible;
+      }
+
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #ccc;
+        border-top: 5px solid #3498db;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Top Navbar */
+      .top-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background: #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 15px;
+        padding-inline: 1.464vw;
+        z-index: 1000;
+      }
+
+      .top-left {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        max-width: 100px;
+      }
+
+      .top-left img {
+        width: 28px;
+      }
+
+      .top-center .logo img {
+        width: 50%;
+      }
+
+      .top-center .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .top-right {
+        text-align: right;
+        font-size: 14px;
+        font-family: "Barlow", sans-serif;
+        font-weight: 300;
+        /* max-width: 100px;
+        min-width: 100px; */
+      }
+
+      .top-right p {
+        margin-bottom: 0 !important;
+      }
+
+      .top-right a {
+        color: #000;
+        text-decoration: underline;
+        line-height: 1.2;
+      }
+
+      /* Left Sidebar */
+      .left-sidebar {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 5.49vw;
+        height: 90%;
+        background: #f3f3f3;
+        border-right: 1px solid #ddd;
+      }
+
+      .left-sidebar ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .left-sidebar ul li {
+        flex: 1;
+        min-height: 80px;
+      }
+
+      .left-sidebar a {
+        writing-mode: vertical-rl;
+        display: inline-block;
+        height: 100%;
+        width: 100% !important;
+        text-align: center;
+        transform: rotate(180deg);
+        margin: 20px 0;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.317vw;
+        font-weight: 500;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        padding: 0 1.5vw;
+      }
+
+      .link-1:hover {
+        background: #ebb762;
+      }
+      .link-2:hover {
+        background-color: #e98267;
+      }
+      .link-3:hover {
+        background: #59856f;
+      }
+      .link-4:hover {
+        background: #407a93;
+      }
+
+      /* Mobile navbar */
+      .mobile-navbar {
+        display: none !important;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        z-index: 1000;
+        padding: 0 16px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .mobile-navbar .logo {
+        height: 40px;
+      }
+
+      .hamburger {
+        font-size: 28px;
+        cursor: pointer;
+      }
+
+      /* Mobile menu drawer */
+      .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        padding: 80px 24px 20px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease;
+        z-index: 999;
+        font-family: "Barlow Condensed", sans-serif;
+      }
+
+      .menu-items {
+        list-style: none;
+        margin-bottom: 40px;
+        margin-top: 20px;
+      }
+
+      .menu-items li {
+        display: flex;
+        align-items: center;
+      }
+
+      .menu-items li a {
+        font-size: 24px;
+        margin: 10px 0;
+        text-decoration: none;
+        color: #212529;
+      }
+
+      .bar {
+        display: inline-block;
+        width: 4px;
+        height: 24px;
+        margin-right: 10px;
+        border-radius: 2px;
+      }
+
+      .yellow {
+        background-color: #f4b400;
+      }
+      .orange {
+        background-color: #f26d4d;
+      }
+      .blue {
+        background-color: #0077a5;
+      }
+      .green {
+        background-color: #3d9970;
+      }
+
+      .nav-footer-links {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #111;
+        font-weight: 300;
+      }
+
+      .nav-footer-links div p {
+        margin: 6px 0;
+      }
+
+      .nav-footer-links a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      /* Main Content */
+      .main-content {
+        margin-left: 6.49vw;
+        margin-top: 80px;
+        width: calc(100% - 6.49vw);
+        padding: 0;
+      }
+
+      /* Hero Section */
+      .hero-section {
+        position: relative;
+        height: 60vh;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .hero-section img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: 1;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        color: white;
+        padding: 0 2rem;
+      }
+
+      .hero-content h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        letter-spacing: -2px;
+        text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+      }
+
+      .hero-content p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        max-width: 700px;
+        margin: 0 auto;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .hero-content h1 {
+          font-size: 3.5rem;
+        }
+
+        .hero-content p {
+          font-size: 1.3rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero-section {
+          height: 50vh;
+          min-height: 350px;
+        }
+
+        .hero-content h1 {
+          font-size: 2.5rem;
+          letter-spacing: -1px;
+        }
+
+        .hero-content p {
+          font-size: 1.1rem;
+        }
+
+        .hero-content {
+          padding: 0 1.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-section {
+          height: 45vh;
+          min-height: 300px;
+        }
+
+        .hero-content h1 {
+          font-size: 2rem;
+        }
+
+        .hero-content p {
+          font-size: 1rem;
+        }
+
+        .hero-content {
+          padding: 0 1rem;
+        }
+      }
+
+      /* About Content Section */
+      .about-content {
+        padding: 80px 2rem;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, #10121b, #f5ecff);
+      }
+
+      /* Story Section */
+      .story-section {
+        max-width: 1200px;
+        margin: 0 auto 80px;
+        padding: 20px;
+      }
+
+      .story-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+        margin-bottom: 4rem;
+      }
+
+      .story-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .story-text {
+        /* padding: 2rem; */
+      }
+
+      .story-text h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+      }
+
+      .story-text p {
+        font-size: 20px;
+        line-height: 1.8;
+        color: #666;
+        margin-bottom: 1rem;
+        font-family: "Barlow", sans-serif;
+      }
+      .story-text p::first-letter {
+        font-size: 3em;
+        font-weight: bold;
+        float: left;
+        line-height: 1;
+        margin-right: 0.1em;
+        padding-right: 8px;
+        color: #693c0d;
+        font-family: "Georgia", serif;
+      }
+      /* Values Section */
+      .values-section {
+        margin-top: 100px;
+        background: #f8f9fa;
+        padding: 80px 2rem;
+      }
+
+      .values-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+
+      .value-card {
+        background: white;
+        padding: 2.5rem;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        text-align: center;
+      }
+
+      .value-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .value-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1.5rem;
+        background: linear-gradient(135deg, #d5dbf1 0%, #020103 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        color: white;
+      }
+
+      .value-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #333;
+      }
+
+      .value-card p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #666;
+      }
+
+      /* Team Section */
+      .team-section {
+        padding: 80px 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2.5rem;
+        margin-top: 3rem;
+      }
+
+      .team-member {
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .team-member:hover {
+        transform: translateY(-5px);
+      }
+
+      .team-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 1.5rem;
+        border: 5px solid #f0f0f0;
+        transition: border-color 0.3s ease;
+      }
+
+      .team-member:hover .team-photo {
+        border-color: #070709;
+      }
+
+      .team-member h4 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+
+      .team-member .role {
+        font-size: 1rem;
+        color: #667eea;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+
+      .team-member p {
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      /* Stats Section */
+      .stats-section {
+        background: linear-gradient(135deg, #e8ecff 0%, #0b0610 100%);
+        padding: 60px 2rem;
+        color: white;
+      }
+
+      .stats-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 3rem;
+        text-align: center;
+      }
+
+      .stat-item h3 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-item p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        opacity: 0.9;
+      }
+
+      /* Responsive */
+      @media (max-width: 870px) {
+        .left-sidebar {
+          display: none;
+        }
+
+        .main-content {
+          width: 100%;
+          margin-left: 0;
+        }
+
+        .top-navbar {
+          display: none;
+        }
+
+        .mobile-navbar {
+          display: flex !important;
+        }
+
+        .hero-content h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero-content p {
+          font-size: 1.2rem;
+        }
+
+        .story-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+
+        .story-text h3 {
+          font-size: 1.5rem;
+        }
+
+        .about-content {
+          padding: 60px 1.5rem;
+        }
+
+        .values-section,
+        .team-section {
+          padding: 60px 1.5rem;
+        }
+
+        .stat-item h3 {
+          font-size: 2.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-content h1 {
+          font-size: 2rem;
+        }
+
+        .hero-content p {
+          font-size: 1rem;
+        }
+
+        .story-image {
+          height: 300px;
+        }
+
+        .section-title {
+          font-size: 1.8rem;
+        }
+
+        .stat-item h3 {
+          font-size: 2rem;
+        }
+
+        .stat-item p {
+          font-size: 1rem;
+        }
+      }
+      .mission-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .mission-list li {
+        padding-left: 25px;
+        position: relative;
+        line-height: 1.6;
+      }
+
+      .mission-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div id="loader" class="loader-container">
+      <div class="spinner"></div>
+    </div> -->
+
+    <!-- Top Navbar -->
+    <header class="top-navbar" style="padding-left: 78px">
+      <div class="top-left">
+        <!-- <a href="#"></a> -->
+        <!-- <a href="#"><img src="images/email.png" /></a> -->
+
+        <button
+          class="booknow-btn"
+          onclick="window.location.href = 'https://forms.gle/TBMWoDtPCmXotu917'"
+        >
+          Book Now
+        </button>
+      </div>
+      <div class="top-center">
+        <a href="index.html" class="logo"
+          ><img src="images/gallerymold-logo-mob.png"
+        /></a>
+      </div>
+      <div class="top-right">
+        <a
+          href="https://www.instagram.com/the_gallerymold?igsh=MXFmZ2VueTg3dHdlOA=="
+          target="_blank"
+          aria-label="Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/share/1FdxHAS2pW/"
+          target="_blank"
+          aria-label="Facebook"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://x.com/GalleryMold?t=FcOK1IZVj1Qe15M-XoKxvQ&s=08"
+          target="_blank"
+          aria-label="Twitter"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a
+          href="https://wa.me/919925111805"
+          target="_blank"
+          aria-label="WhatsApp"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+    </header>
+
+    <!-- Mobile Navbar -->
+    <header class="mobile-navbar">
+      <a href="index.html">
+        <img src="images/gallerymold-logo-mob.png" alt="Logo" class="logo"
+      /></a>
+      <button
+        class="booknow-btn"
+        onclick="window.location.href = 'contact.html'"
+      >
+        Book Now
+      </button>
+      <div class="hamburger" id="toggleBtn">&#9776;</div>
+    </header>
+
+    <!-- Sliding Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="menu-items">
+        <li>
+          <span class="bar yellow"></span>
+          <a href="index.html#about">About us</a>
+        </li>
+        <li>
+          <span class="bar orange"></span>
+          <a href="index.html#exhibitions">Event</a>
+        </li>
+        <li>
+          <span class="bar blue"></span>
+          <a href="index.html#artwork">Glimpse</a>
+        </li>
+        <li>
+          <span class="bar green"></span>
+          <a href="index.html#contactus">Contact Us</a>
+        </li>
+      </ul>
+
+      <div class="top-right">
+        <a
+          href="https://www.instagram.com/the_gallerymold?igsh=MXFmZ2VueTg3dHdlOA=="
+          target="_blank"
+          aria-label="Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/share/1FdxHAS2pW/"
+          target="_blank"
+          aria-label="Facebook"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://x.com/GalleryMold?t=FcOK1IZVj1Qe15M-XoKxvQ&s=08"
+          target="_blank"
+          aria-label="Twitter"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a
+          href="https://wa.me/919925111805"
+          target="_blank"
+          aria-label="WhatsApp"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Left Sidebar -->
+    <aside class="left-sidebar">
+      <ul>
+        <li><a href="index.html#about" class="link-1">About us</a></li>
+        <li><a href="index.html#exhibitions" class="link-2">Event</a></li>
+        <li><a href="index.html#artwork" class="link-3">Glimpse</a></li>
+        <li><a href="index.html#contactus" class="link-4">Contact Us</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-overlay">
+          <img src="images/aboutdarkbanner.webp" alt="about banner" />
+        </div>
+        <div class="hero-content">
+          <h1>About Gallery Mold</h1>
+          <p>Bridging innovative art practices with contemporary aesthetics</p>
+        </div>
+      </section>
+
+      <!-- About Content -->
+      <div class="" style="padding-top: 100px">
+        <!-- Story Section -->
+        <section class="story-section">
+          <h2 class="section-title">Our Story</h2>
+
+          <div class="story-grid">
+            <img
+              src="images/ourstroy.webp"
+              alt="Gallery Space"
+              class="story-image"
+            />
+            <div class="story-text">
+              <!-- <h3>A Vision for Contemporary Art</h3> -->
+              <p>
+                Gallery MOLD was founded six months ago with a vision to create
+                a space in Vadodara for young and emerging artists to grow and
+                share their voices. Designed with an international outlook, it
+                brings a fresh, contemporary approach to art—celebrating modern
+                ideas, experimental works, and interactive experiences. Founded
+                by art enthusiast Shilpa Parikh, MOLD reflects her belief in
+                Vadodara’s creative potential and its place on the global art
+                map.
+              </p>
+            </div>
+          </div>
+
+          <div class="story-grid">
+            <div class="story-text">
+              <!-- <h3>Curating Excellence</h3> -->
+              <p>
+                Our vision is to create a vibrant, contemporary space where
+                creativity thrives and art inspires connection. We empower
+                emerging artists through experimentation and collaboration,
+                while welcoming select businesses and exhibitions to engage with
+                this high-end venue. Rooted in authenticity, innovation, and
+                excellence, we uphold international standards and enrich
+                Vadodara’s cultural landscape.
+              </p>
+            </div>
+            <img
+              src="images/ourstory2.webp"
+              alt="Exhibition"
+              class="story-image"
+            />
+          </div>
+        </section>
+      </div>
+
+      <!-- Values Section -->
+      <section class="values-section" style="display: none">
+        <h2 class="section-title">Our Values</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">🎨</div>
+            <h3>Innovation</h3>
+            <p>
+              We champion innovative approaches to art, constantly pushing
+              boundaries and exploring new forms of creative expression.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3>Community</h3>
+            <p>
+              Building a vibrant community of artists, collectors, and art
+              enthusiasts is at the heart of everything we do.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">✨</div>
+            <h3>Excellence</h3>
+            <p>
+              We maintain the highest standards in curation, presentation, and
+              engagement, ensuring exceptional experiences for all.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">🌍</div>
+            <h3>Accessibility</h3>
+            <p>
+              Making art accessible to diverse audiences through inclusive
+              programming and educational initiatives.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🌍</div>
+            <h3>Accessibility</h3>
+            <p>
+              Making art accessible to diverse audiences through inclusive
+              programming and educational initiatives.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🌍</div>
+            <h3>Accessibility</h3>
+            <p>
+              Making art accessible to diverse audiences through inclusive
+              programming and educational initiatives.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-section" style="display: none">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>Exhibitions Hosted</p>
+          </div>
+          <div class="stat-item">
+            <h3>200+</h3>
+            <p>Artists Showcased</p>
+          </div>
+          <div class="stat-item">
+            <h3>5K+</h3>
+            <p>Visitors Annually</p>
+          </div>
+          <div class="stat-item">
+            <h3>100+</h3>
+            <p>Art Talks & Events</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="team-section" style="display: none">
+        <h2 class="section-title">Meet Our Team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img
+              src="images/sediments/6.webp"
+              alt="Team Member"
+              class="team-photo"
+            />
+            <h4>Sarah Johnson</h4>
+            <p class="role">Gallery Director</p>
+            <p>
+              Leading our vision with 15 years of experience in contemporary art
+              curation.
+            </p>
+          </div>
+
+          <div class="team-member">
+            <img
+              src="images/oldtoself/2.webp"
+              alt="Team Member"
+              class="team-photo"
+            />
+            <h4>Michael Chen</h4>
+            <p class="role">Curator</p>
+            <p>
+              Bringing innovative exhibitions to life with expertise in modern
+              art movements.
+            </p>
+          </div>
+
+          <div class="team-member">
+            <img
+              src="images/sediments/7.webp"
+              alt="Team Member"
+              class="team-photo"
+            />
+            <h4>Priya Sharma</h4>
+            <p class="role">Education Coordinator</p>
+            <p>
+              Developing engaging programs that connect communities with
+              contemporary art.
+            </p>
+          </div>
+
+          <div class="team-member">
+            <img
+              src="images/oldtoself/3.webp"
+              alt="Team Member"
+              class="team-photo"
+            />
+            <h4>David Martinez</h4>
+            <p class="role">Gallery Manager</p>
+            <p>
+              Ensuring exceptional experiences for visitors and seamless gallery
+              operations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer-section" id="contact">
+        <div class="row footer-top">
+          <div class="col-lg-3 mb-4">
+            <img
+              src="images/mold-footer-logo.png"
+              alt="Gallery Mold Logo"
+              class="mb-3 footer-logo"
+              style="max-width: 150px"
+            />
+            <p class="footer-text"></p>
+          </div>
+
+          <div class="col-lg-3 mb-4 sitemap">
+            <h5 class="footer-heading"><span>s</span>ite map</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html#about">ABOUT US</a></li>
+              <li><a href="index.html#exhibitions">EVENTS</a></li>
+              <li><a href="index.html#artwork">Glimpse</a></li>
+              <!-- <li><a href="#event">EVENTS</a></li> -->
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 mb-4">
+            <h5 class="footer-heading"><span>c</span>ontact</h5>
+            <p style="margin-bottom: 0">
+              <a href="mailto:thegallerymold@gmail.com"
+                >thegallerymold@gmail.com</a
+              >
+            </p>
+            <p><a href="tel:+919925111805">+91 9925111805</a></p>
+          </div>
+
+          <div class="col-lg-3 address">
+            <h5 class="footer-heading"><span>a</span>ddress</h5>
+            <p>
+              Ground Floor, Naman House, Race Course,<br />Vadodara, Gujarat
+              390007
+            </p>
+            <a href="https://g.co/kgs/Zw49HVQ" target="_blank">
+              <span class="icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+
+              GET DIRECTION</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom text-center py-3">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+          >
+            <p class="mb-2 mb-md-0">
+              © Gallery Mold. Developed by
+              <a href="https://diwizon.com/" target="_blank" class="diwizon"
+                >Diwizon.</a
+              >
+            </p>
+            <!-- <div class="footer-social">
+              <a
+                href="https://www.instagram.com/the_gallerymold/"
+                target="_blank"
+                ><img
+                  src="images/instagram.svg"
+                  alt="Instagram"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/linkedin.svg"
+                  alt="LinkedIn"
+                  class="social-icon"
+              /></a>
+            </div> -->
+          </div>
+        </div>
+      </footer>
+    </main>
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script>
+      const toggleBtn = document.getElementById("toggleBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const mobileNavbar = document.querySelector(".mobile-navbar");
+      const menuLinks = mobileMenu.querySelectorAll("a");
+
+      let isOpen = false;
+
+      toggleBtn.addEventListener("click", () => {
+        isOpen = !isOpen;
+        if (isOpen) {
+          mobileMenu.style.right = "0";
+          mobileNavbar.style.display = "none";
+        } else {
+          mobileMenu.style.right = "-100%";
+          mobileNavbar.style.display = "flex";
+        }
+      });
+
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          isOpen = false;
+          mobileMenu.style.right = "-100%";
+          mobileNavbar.style.display = "flex";
+        });
+      });
+    </script>
+  </body>
+</html>

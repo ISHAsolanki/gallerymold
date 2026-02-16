@@ -1,0 +1,167 @@
+::1 - - [12/Feb/2026 10:43:58] "HEAD / HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 10:44:37] "GET / HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 10:44:37] "GET /style.css HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /fonts/Erode_Complete/Fonts/WEB/css/erode.css HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/gallerymold-logo-mob.png HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/hero/ekatvaweb.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/hero/verve-banner.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/hero/1.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/hero/2.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] "GET /images/art-work-1-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/left-arrow.png HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] "GET /images/art-work-2-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/right-arrow.png HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] "GET /images/art-work-4-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/art-work-3-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/inside2.jpg HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/about1.webp HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/eventsbanner.jpg HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/curated/1.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/curated/2.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/curated/3.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/curated/5.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/curated/8.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/curated/10.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/curated/11.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/curated/9.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] "GET /images/artist/asish-das.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/curated/12.webp HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] "GET /images/artist/chander-p.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/artist/clinton.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] "GET /images/artist/dushyant.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] "GET /images/artist/jithin.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/artist/hiren.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/artist/nalinakshya.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] "GET /images/artist/sangam.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] "GET /images/akash-bhoya-min.jpg HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/hero-4-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/artist/sugin.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/archana-singh-min.jpg HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] "GET /images/deepika-sakhat-min.jpg HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/neo-baroda.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:37] "GET /images/pratima-tandel-min.jpg HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:44:37] "GET /images/mold-footer-logo.png HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:38] "GET /fonts/Synonym_Complete/Fonts/WEB/fonts/Synonym-Regular.woff2 HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:38] "GET /fonts/Erode_Complete/Fonts/WEB/fonts/Erode-Variable.woff2 HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:44:46] "GET /contact.html HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 10:44:46] "GET /images/subscribe-arrow.svg HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 10:44:46] "GET /js/form.js HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 10:44:46] "GET /images/stir-blob-black.svg HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 10:44:46] "GET /js/firebase.js HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 10:44:58] "GET /thankyou.html HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 10:44:58] code 404, message File not found
+::1 - - [12/Feb/2026 10:44:58] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 10:45:02] "GET /contact.html HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 10:45:02] "GET /images/favicon.png HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 10:45:07] code 404, message File not found
+::1 - - [12/Feb/2026 10:45:07] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 11:59:57] "GET /contact.html HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 11:59:57] code 404, message File not found
+::1 - - [12/Feb/2026 11:59:57] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] "GET /index.html HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 12:00:01] "GET /js/cloudinary-config.js HTTP/1.1" 200 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/art-work-1-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/art-work-2-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/art-work-3-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/art-work-4-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/artist/asish-das.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/artist/clinton.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/artist/dushyant.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/artist/hiren.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/artist/chander-p.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/artist/jithin.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/artist/nalinakshya.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/artist/sangam.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/artist/sugin.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/archana-singh-min.jpg HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] "GET /images/akash-bhoya-min.jpg HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] "GET /images/hero-4-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/deepika-sakhat-min.jpg HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/pratima-tandel-min.jpg HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:01] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:01] "GET /images/neo-baroda.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] "GET /index.html HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/art-work-1-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] "GET /js/cloudinary-config.js HTTP/1.1" 304 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/art-work-2-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/art-work-3-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/art-work-4-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/artist/asish-das.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/artist/chander-p.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/artist/clinton.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/artist/dushyant.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/artist/hiren.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/artist/jithin.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/artist/nalinakshya.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/artist/sangam.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/artist/sugin.webp HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/hero-4-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/akash-bhoya-min.jpg HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/archana-singh-min.jpg HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/deepika-sakhat-min.jpg HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/pratima-tandel-min.jpg HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/neo-baroda.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/art-work-1-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/art-work-2-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] code 404, message File not found
+::1 - - [12/Feb/2026 12:00:04] "GET /images/art-work-3-min.png HTTP/1.1" 404 -
+::1 - - [12/Feb/2026 12:00:04] "GET /images/art-work-4-min.png HTTP/1.1" 404 -

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel • Gallery MOLD</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fonts (match site) -->
+    <link rel="stylesheet" href="fonts/Erode_Complete/Fonts/WEB/css/erode.css" />
+
+    <style>
+      body { background:#0f0f0f; color:#eaeaea; font-family: 'Erode', ui-sans-serif, system-ui, -apple-system; }
+      a { color: inherit; }
+
+      .admin-header { display:flex; align-items:center; justify-content:space-between; padding:16px 20px; border-bottom:1px solid #2a2a2a; position: sticky; top:0; background:#0f0f0f; z-index:10; }
+      .admin-title { margin:0; font-size:20px; letter-spacing:0.5px; }
+
+      .tabs { display:flex; gap:10px; padding:16px 20px; border-bottom:1px solid #2a2a2a; position: sticky; top:61px; background:#0f0f0f; z-index:9; flex-wrap:wrap; }
+      .tab-button { border:1px solid #2a2a2a; background:#141414; color:#eaeaea; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:14px; }
+      .tab-button.active, .tab-button:hover { background:#1e1e1e; border-color:#444; }
+
+      .container-admin { max-width: 1100px; margin: 24px auto; padding: 0 16px; }
+
+      .tab-content { display:none; }
+      .tab-content.active { display:block; }
+
+      .card-dark { background:#131313; border:1px solid #262626; border-radius:12px; padding:16px; }
+      .card-dark h5 { margin:0 0 12px 0; }
+
+      .form-label { color:#bdbdbd; }
+      .form-control, .form-select { background:#0f0f0f; color:#eaeaea; border:1px solid #2a2a2a; }
+      .form-control:focus, .form-select:focus { background:#111; color:#fff; border-color:#4b4b4b; box-shadow:none; }
+
+      .btn-primary { background:#3a86ff; border-color:#3a86ff; }
+      .btn-primary:hover { background:#2f6cce; border-color:#2f6cce; }
+      .btn-danger { background:#ef233c; border-color:#ef233c; }
+
+      .progress { background:#1a1a1a; border:1px solid #2a2a2a; }
+
+      .item-card { display:flex; gap:16px; align-items:flex-start; justify-content:space-between; background:#131313; border:1px solid #262626; padding:14px; border-radius:12px; }
+      .item-card + .item-card { margin-top:12px; }
+      .item-info h3 { font-size:16px; margin:0 0 4px 0; }
+      .item-info p { margin:2px 0; color:#bdbdbd; }
+      .item-thumbnail { width:100px; height:70px; object-fit:cover; border-radius:8px; border:1px solid #2a2a2a; }
+
+      .empty-state { text-align:center; color:#9a9a9a; background:#131313; border:1px solid #262626; padding:20px; border-radius:12px; }
+
+      .msg { display:none; margin-top:10px; font-size:14px; }
+
+      .img-preview { display:none; width:160px; height:110px; object-fit:cover; border-radius:10px; border:1px solid #2a2a2a; }
+
+      .login-card { max-width: 440px; margin: 8vh auto; }
+      .muted { color:#9a9a9a; font-size:13px; }
+    </style>
+  </head>
+  <body>
+
+    <header class="admin-header">
+      <h1 class="admin-title">Gallery MOLD — Admin</h1>
+      <div>
+        <button id="logout-btn" class="btn btn-sm btn-outline-light" style="display:none;">Sign out</button>
+      </div>
+    </header>
+
+    <!-- Tabs -->
+    <div class="tabs" id="tabs" style="display:none;">
+      <button class="tab-button active" onclick="showTab('exhibitions')">Exhibitions</button>
+      <button class="tab-button" onclick="showTab('glimpse')">Glimpse</button>
+      <button class="tab-button" onclick="showTab('contacts')">Contacts</button>
+    </div>
+
+    <main class="container-admin">
+
+      <!-- Login Gate -->
+      <section id="login-section" class="login-card card-dark">
+        <h5 class="mb-3">Admin Sign In</h5>
+        <div class="row g-3">
+          <div class="col-12">
+            <label for="login-email" class="form-label">Email</label>
+            <input id="login-email" type="email" class="form-control" placeholder="admin@example.com" />
+          </div>
+          <div class="col-12">
+            <label for="login-password" class="form-label">Password</label>
+            <input id="login-password" type="password" class="form-control" placeholder="••••••••" />
+          </div>
+          <div class="col-12 d-flex gap-2">
+            <button id="login-btn" class="btn btn-primary">Sign in</button>
+            <div id="login-msg" class="msg"></div>
+          </div>
+          <div class="col-12"><p class="muted m-0">Access is restricted. Contact the site owner to be added.</p></div>
+        </div>
+      </section>
+
+      <!-- Admin App -->
+      <section id="admin-app" style="display:none;">
+
+        <!-- Exhibitions Tab -->
+        <div id="exhibitions-tab" class="tab-content active">
+          <div class="row g-3">
+            <div class="col-lg-5">
+              <div class="card-dark h-100">
+                <h5 class="mb-3">Add Exhibition</h5>
+                <form id="exhibition-form" class="row g-3">
+                  <div class="col-12">
+                    <label class="form-label" for="ex-title">Title</label>
+                    <input id="ex-title" class="form-control" placeholder="Exhibition title" required />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="ex-subtitle">Subtitle</label>
+                    <input id="ex-subtitle" class="form-control" placeholder="Optional subtitle" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="ex-artist">Artist</label>
+                    <input id="ex-artist" class="form-control" placeholder="Artist name (optional)" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="ex-description">Description</label>
+                    <textarea id="ex-description" class="form-control" rows="3" placeholder="A few lines about the show"></textarea>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="ex-category">Category</label>
+                    <select id="ex-category" class="form-select">
+                      <option value="upcoming">Upcoming</option>
+                      <option value="current">Current</option>
+                      <option value="past">Past</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <label class="form-label" for="ex-order">Order</label>
+                    <input id="ex-order" type="number" class="form-control" value="1" />
+                  </div>
+                  <div class="col-md-3">
+                    <label class="form-label" for="ex-status">Status</label>
+                    <select id="ex-status" class="form-select">
+                      <option value="active">Active</option>
+                      <option value="inactive">Inactive</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="ex-image">Banner Image</label>
+                    <input id="ex-image" type="file" accept="image/*" class="form-control" />
+                    <img id="ex-image-preview" class="img-preview mt-2" alt="Preview" />
+                  </div>
+
+                  <div id="ex-upload-progress" class="col-12" style="display:none;">
+                    <div class="progress" role="progressbar" aria-label="Upload progress" aria-valuemin="0" aria-valuemax="100">
+                      <div id="ex-progress-fill" class="progress-bar" style="width: 0%">0%</div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Add Exhibition</button>
+                    <span id="exhibition-success" class="msg text-success"></span>
+                    <span id="exhibition-error" class="msg text-danger"></span>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="card-dark h-100">
+                <h5 class="mb-3">Exhibitions</h5>
+                <div id="exhibitions-list"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Glimpse Tab -->
+        <div id="glimpse-tab" class="tab-content">
+          <div class="row g-3">
+            <div class="col-lg-5">
+              <div class="card-dark h-100">
+                <h5 class="mb-3">Add Glimpse Photo</h5>
+                <form id="glimpse-form" class="row g-3">
+                  <div class="col-12">
+                    <label class="form-label" for="gl-caption">Caption</label>
+                    <input id="gl-caption" class="form-control" placeholder="Optional caption" />
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label" for="gl-order">Order</label>
+                    <input id="gl-order" type="number" class="form-control" value="1" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="gl-image">Image</label>
+                    <input id="gl-image" type="file" accept="image/*" class="form-control" />
+                    <img id="gl-image-preview" class="img-preview mt-2" alt="Preview" />
+                  </div>
+
+                  <div id="gl-upload-progress" class="col-12" style="display:none;">
+                    <div class="progress" role="progressbar" aria-label="Upload progress" aria-valuemin="0" aria-valuemax="100">
+                      <div id="gl-progress-fill" class="progress-bar" style="width: 0%">0%</div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Add Photo</button>
+                    <span id="glimpse-success" class="msg text-success"></span>
+                    <span id="glimpse-error" class="msg text-danger"></span>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="card-dark h-100">
+                <h5 class="mb-3">Glimpse Gallery</h5>
+                <div id="glimpse-list"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contacts Tab -->
+        <div id="contacts-tab" class="tab-content">
+          <div class="card-dark">
+            <h5 class="mb-3">Contact Messages</h5>
+            <div id="contacts-list"></div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Firebase Core (compat) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+
+    <!-- Cloudinary + Firebase config -->
+    <script src="js/cloudinary-config.js"></script>
+    <script src="js/firebase.js"></script>
+
+    <!-- Admin logic -->
+    <script src="js/admin.js"></script>
+
+    <script>
+      // Simple auth gate for admin access
+      const loginSection = document.getElementById('login-section');
+      const adminApp = document.getElementById('admin-app');
+      const tabsEl = document.getElementById('tabs');
+      const loginBtn = document.getElementById('login-btn');
+      const loginMsg = document.getElementById('login-msg');
+      const logoutBtn = document.getElementById('logout-btn');
+
+      function setVisible(el, visible) { el.style.display = visible ? '' : 'none'; }
+      function showMsg(el, text, ok=true) { el.textContent = text; el.className = 'msg ' + (ok ? 'text-success' : 'text-danger'); el.style.display = 'inline-block'; setTimeout(()=>{ el.style.display = 'none'; }, 4000); }
+
+      // Handle login click
+      loginBtn.addEventListener('click', async () => {
+        const email = document.getElementById('login-email').value.trim();
+        const pass = document.getElementById('login-password').value;
+        if (!email || !pass) { showMsg(loginMsg, 'Enter email and password', false); return; }
+        try {
+          await firebase.auth().signInWithEmailAndPassword(email, pass);
+        } catch (err) {
+          showMsg(loginMsg, err.message || 'Login failed', false);
+        }
+      });
+
+      // Handle logout
+      logoutBtn.addEventListener('click', async () => {
+        try { await firebase.auth().signOut(); } catch {}
+      });
+
+      // Observe auth state
+      firebase.auth().onAuthStateChanged((user) => {
+        const authed = !!user;
+        setVisible(loginSection, !authed);
+        setVisible(adminApp, authed);
+        setVisible(tabsEl, authed);
+        setVisible(logoutBtn, authed);
+        if (authed) {
+          // Default load lists
+          try { if (typeof loadExhibitionsList === 'function') loadExhibitionsList(); } catch {}
+        }
+      });
+    </script>
+  </body>
+</html>

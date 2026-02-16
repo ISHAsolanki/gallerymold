@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-E0Z53KBL2C"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-E0Z53KBL2C");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Gallery Mold - Art Gallery" />
+    <meta
+      property="og:description"
+      content="Explore our collection of contemporary artworks and exhibitions."
+    />
+    <meta
+      property="og:image"
+      content="https://gallerymold.com/images/social-preview.png"
+    />
+    <meta property="og:url" content="https://gallerymold.com/gallery.html" />
+    <meta property="og:type" content="website" />
+
+    <title>Gallery - Gallery Mold</title>
+    <link
+      rel="stylesheet"
+      href="fonts/Erode_Complete/Fonts/WEB/css/erode.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" sizes="16x16" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      /* Force Erode for headings site-wide on this page */
+      h1,
+      h2,
+      h3 {
+        font-family: "Erode-Variable", "Erode", serif !important;
+        font-weight: 600;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        background: #fff;
+        font-family: "Barlow", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+      }
+
+      ul {
+        padding-left: 0 !important;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      /* Top Navbar */
+      .top-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background: #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 15px;
+        padding-inline: 1.464vw;
+        z-index: 1000;
+      }
+
+      .top-left {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        max-width: 100px;
+      }
+
+      .top-left img {
+        width: 28px;
+      }
+
+      .top-center .logo img {
+        width: 50%;
+      }
+
+      .top-center .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .top-right {
+        text-align: right;
+        font-size: 14px;
+        font-family: "Barlow", sans-serif;
+        font-weight: 300;
+        /* max-width: 100px;
+        min-width: 100px; */
+      }
+
+      .top-right p {
+        margin-bottom: 0 !important;
+      }
+
+      .top-right a {
+        color: #000;
+        text-decoration: underline;
+        line-height: 1.2;
+      }
+
+      /* Left Sidebar */
+      .left-sidebar {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 60px;
+        height: calc(100vh - 60px);
+        width: 5.49vw;
+        height: 90%;
+        background: #f3f3f3;
+        border-right: 1px solid #ddd;
+      }
+
+      .left-sidebar ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .left-sidebar ul li {
+        flex: 1;
+        min-height: 80px;
+        /* Minimum height for each item */
+      }
+
+      .left-sidebar a {
+        writing-mode: vertical-rl;
+        display: inline-block;
+        height: 100%;
+        width: 100% !important;
+        text-align: center;
+        transform: rotate(180deg);
+        margin: 20px 0;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.317vw;
+        font-weight: 500;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        padding: 0 1.5vw;
+      }
+
+      .link-1:hover {
+        background: #ebb762;
+      }
+
+      .link-2:hover {
+        background-color: #e98267;
+      }
+
+      .link-3:hover {
+        background: #59856f;
+      }
+
+      .link-4:hover {
+        background: #407a93;
+      }
+
+      /* Mobile navbar */
+      .mobile-navbar {
+        display: none !important;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        z-index: 1000;
+        padding: 0 16px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .mobile-navbar .logo {
+        height: 40px;
+      }
+
+      .hamburger {
+        font-size: 28px;
+        cursor: pointer;
+      }
+
+      /* Mobile menu drawer */
+      .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        padding: 80px 24px 20px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease;
+        z-index: 999;
+        font-family: "Barlow Condensed", sans-serif;
+      }
+
+      .menu-items {
+        list-style: none;
+        margin-bottom: 40px;
+        margin-top: 20px;
+      }
+
+      .menu-items li {
+        display: flex;
+        align-items: center;
+      }
+
+      .menu-items li a {
+        font-size: 24px;
+        margin: 10px 0;
+        text-decoration: none;
+        color: #212529;
+      }
+
+      .bar {
+        display: inline-block;
+        width: 4px;
+        height: 24px;
+        margin-right: 10px;
+        border-radius: 2px;
+      }
+
+      .yellow {
+        background-color: #f4b400;
+      }
+
+      .orange {
+        background-color: #f26d4d;
+      }
+
+      .blue {
+        background-color: #0077a5;
+      }
+
+      .green {
+        background-color: #3d9970;
+      }
+
+      .nav-footer-links {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #111;
+        font-weight: 300;
+      }
+
+      .nav-footer-links div p {
+        margin: 6px 0;
+      }
+
+      .nav-footer-links a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      /* Main Content */
+      .main-content {
+        margin-left: 6.49vw;
+        margin-top: 80px;
+        width: calc(100% - 6.49vw);
+        padding: 0 2rem;
+      }
+
+      /* Gallery Header */
+      .gallery-header {
+        text-align: center;
+        padding: 60px 0 40px;
+      }
+
+      .gallery-header h1 {
+        font-size: 3rem;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        letter-spacing: -0.115vw;
+      }
+
+      .gallery-header p {
+        font-size: 1.2rem;
+        color: #666;
+        font-weight: 300;
+      }
+
+      /* Filter Tabs */
+      .filter-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+      }
+
+      .filter-btn {
+        padding: 12px 24px;
+        background: transparent;
+        border: 2px solid #ddd;
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 25px;
+      }
+
+      .filter-btn:hover,
+      .filter-btn.active {
+        background: #333;
+        color: white;
+        border-color: #333;
+      }
+
+      /* Gallery Grid */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-bottom: 4rem;
+      }
+
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .gallery-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .gallery-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+        color: white;
+        padding: 2rem 1.5rem 1.5rem;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover .gallery-overlay {
+        transform: translateY(0);
+      }
+
+      .gallery-overlay h3 {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+
+      .gallery-overlay p {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        margin-bottom: 0;
+      }
+
+      /* Modal */
+      .gallery-modal {
+        display: none;
+        position: fixed;
+        z-index: 10000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-content {
+        width: 90%;
+        height: 90%;
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .carousel-inner img {
+        width: 100%;
+        height: 90vh;
+        object-fit: contain;
+      }
+
+      .custom-control {
+        width: 50px;
+        height: 50px;
+        background: #000;
+        /* black background */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background 0.3s ease;
+        opacity: 0.8;
+      }
+
+      .custom-control:hover {
+        background: #111;
+        /* slightly lighter black */
+        opacity: 1;
+      }
+
+      .custom-arrow {
+        color: #fff;
+        /* white arrow */
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1;
+      }
+
+      .modal-image {
+        width: 100%;
+        height: auto;
+        max-height: 70vh;
+        object-fit: contain;
+      }
+
+      .modal-info {
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .modal-info h3 {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 10001;
+      }
+
+      .close:hover {
+        opacity: 0.7;
+      }
+
+      /* Responsive */
+      @media (max-width: 870px) {
+        .left-sidebar {
+          display: none;
+        }
+
+        .main-content {
+          width: 100%;
+          margin-left: 0;
+          padding: 0 1rem;
+        }
+
+        .top-navbar {
+          display: none;
+        }
+
+        .mobile-navbar {
+          display: flex !important;
+        }
+
+        .gallery-header {
+          padding: 40px 0 30px;
+        }
+
+        .gallery-header h1 {
+          font-size: 2.5rem;
+        }
+
+        .filter-tabs {
+          gap: 1rem;
+        }
+
+        .filter-btn {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+          gap: 1.5rem;
+        }
+
+        .gallery-item img {
+          height: 250px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .gallery-grid {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+
+        .gallery-header h1 {
+          font-size: 2rem;
+        }
+
+        .filter-tabs {
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="loader" class="loader-container">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Top Navbar -->
+    <header class="top-navbar" style="padding-left: 78px">
+      <div class="top-left">
+        <!-- <a href="#"></a> -->
+        <!-- <a href="#"><img src="images/email.png" /></a> -->
+
+        <button
+          class="booknow-btn"
+          onclick="window.location.href = 'https://forms.gle/TBMWoDtPCmXotu917'"
+        >
+          Book Now
+        </button>
+      </div>
+      <div class="top-center">
+        <a href="index.html" class="logo"
+          ><img src="images/gallerymold-logo-mob.png"
+        /></a>
+      </div>
+      <div class="top-right">
+        <a
+          href="https://www.instagram.com/the_gallerymold?igsh=MXFmZ2VueTg3dHdlOA=="
+          target="_blank"
+          aria-label="Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/share/1FdxHAS2pW/"
+          target="_blank"
+          aria-label="Facebook"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://x.com/GalleryMold?t=FcOK1IZVj1Qe15M-XoKxvQ&s=08"
+          target="_blank"
+          aria-label="Twitter"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a
+          href="https://wa.me/919925111805"
+          target="_blank"
+          aria-label="WhatsApp"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+    </header>
+
+    <!-- Mobile Navbar -->
+    <header class="mobile-navbar">
+      <a href="index.html">
+        <img src="images/gallerymold-logo-mob.png" alt="Logo" class="logo"
+      /></a>
+
+      <button
+        class="booknow-btn"
+        onclick="window.location.href = 'contact.html'"
+      >
+        Book Now
+      </button>
+      <div class="hamburger" id="toggleBtn">&#9776;</div>
+    </header>
+
+    <!-- Sliding Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="menu-items">
+        <li>
+          <span class="bar yellow"></span
+          ><a href="index.html#artist">artists</a>
+        </li>
+        <li>
+          <span class="bar orange"></span><a href="index.html#art">art work</a>
+        </li>
+        <li>
+          <span class="bar blue"></span><a href="index.html#event">events</a>
+        </li>
+        <li>
+          <span class="bar green"></span
+          ><a href="index.html#promo">promotions</a>
+        </li>
+        <!-- <li><span class="bar blue"></span><a href="gallery.html">gallery</a></li> -->
+      </ul>
+
+      <div class="nav-footer-links">
+        <div>
+          <p><a href="index.html#about">About Us</a></p>
+          <p><a href="contact.html">Contact Us</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left Sidebar -->
+    <aside class="left-sidebar">
+      <ul>
+        <li><a href="index.html#artist" class="link-1">artists</a></li>
+        <li><a href="index.html#art" class="link-2">art works</a></li>
+        <li><a href="index.html#event" class="link-3">events</a></li>
+        <li><a href="index.html#promo" class="link-5">promotions</a></li>
+        <!-- <li><a href="gallery.html" class="link-4">gallery</a></li> -->
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Gallery Header -->
+      <section class="gallery-header">
+        <h1>Upcoming Events</h1>
+        <p>Discover upcoming events / exhibitions!</p>
+      </section>
+
+      <!-- Filter Tabs -->
+      <!-- <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Artworks</button>
+            <button class="filter-btn" data-filter="paintings">Paintings</button>
+            <button class="filter-btn" data-filter="sculptures">Sculptures</button>
+            <button class="filter-btn" data-filter="photography">Photography</button>
+            <button class="filter-btn" data-filter="mixed-media">Mixed Media</button>
+        </div> -->
+
+      <!-- Filter Buttons -->
+<div class="filter-buttons" style="text-align: center; margin: 30px 0;">
+  <button data-filter="all" class="filter-btn active">All Shows</button>
+  <button data-filter="Art Show" class="filter-btn">Art Shows</button>
+  <button data-filter="Talk Show" class="filter-btn">Talk Shows</button>
+  <button data-filter="Exhibition" class="filter-btn">Exhibitions</button>
+</div>
+
+<!-- Events Container -->
+<div id="events-container" class="events-grid">
+  <p style="text-align: center;">Loading events...</p>
+</div>
+
+    </main>
+
+    <!-- Modal -->
+    <!-- Modal with Slider -->
+    <div id="galleryModal" class="gallery-modal">
+      <span class="close" id="modalClose">&times;</span>
+      <div class="modal-content">
+        <div
+          id="carouselGallery"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" id="carouselInner"></div>
+
+          <!-- Controls -->
+
+          <button
+            class="carousel-control-prev custom-control"
+            type="button"
+            data-bs-target="#carouselGallery"
+            data-bs-slide="prev"
+          >
+            <span class="custom-arrow">&larr;</span>
+          </button>
+          <button
+            class="carousel-control-next custom-control"
+            type="button"
+            data-bs-target="#carouselGallery"
+            data-bs-slide="next"
+          >
+            <span class="custom-arrow">&rarr;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Gallery data - replace with your actual images and data
+      const galleryData = [
+        {
+          id: 1,
+          title: "Event 1",
+          artist: "Event 1",
+          category: "paintings",
+          image: "images/events/banner-1-1-min.png",
+          description:
+            "A vibrant exploration of color and form that captures the essence of human emotion.",
+        },
+        {
+          id: 2,
+          title: "Event 1",
+          artist: "Event 2",
+          category: "photography",
+          image: "images/events/image.png",
+          description:
+            "Contemporary urban landscape capturing the intersection of light and architecture.",
+        },
+        // {
+        //   id: 3,
+        //   title: "Event 1",
+        //   artist: "Event 3",
+        //   category: "sculptures",
+        //   image: "images/banner-1-1-min.png",
+        //   description:
+        //     "A sculptural piece that explores transformation and the fluidity of form.",
+        // },
+        // {
+        //   id: 4,
+        //   title: "Event 1",
+        //   artist: "Event 4",
+        //   category: "mixed-media",
+        //   image: "images/banner-1-1-min.png",
+        //   description:
+        //     "Mixed media artwork blending traditional techniques with digital innovation.",
+        // },
+        // {
+        //   id: 5,
+        //   title: "Event 1",
+        //   artist: "Event 5",
+        //   category: "paintings",
+        //   image: "images/banner-1-1-min.png",
+        //   description:
+        //     "A peaceful composition that invites contemplation and inner reflection.",
+        // },
+        // {
+        //   id: 6,
+        //   title: "Event 1",
+        //   artist: "Event 6",
+        //   category: "sculptures",
+        //   image: "images/banner-1-1-min.png",
+        //   description:
+        //     "Modern sculptural interpretation of classical forms and contemporary themes.",
+        // },
+        // {
+        //     id: 7,
+        //     title: "Landscape Study",
+        //     artist: "Akash Bhoya",
+        //     category: "paintings",
+        //     image: "images/akash-bhoya-min.jpg",
+        //     description: "A contemporary take on landscape painting with bold colors and dynamic composition."
+        // },
+        // {
+        //     id: 8,
+        //     title: "Identity Fragments",
+        //     artist: "Archana Singh",
+        //     category: "mixed-media",
+        //     image: "images/archana-singh-min.jpg",
+        //     description: "Mixed media exploration of identity and cultural heritage in modern context."
+        // },
+        // {
+        //     id: 9,
+        //     title: "Motion Studies",
+        //     artist: "Deepika Sakhat",
+        //     category: "photography",
+        //     image: "images/deepika-sakhat-min.jpg",
+        //     description: "Photographic series capturing movement and time in urban environments."
+        // },
+        // {
+        //     id: 10,
+        //     title: "Textural Narratives",
+        //     artist: "Pratima Tandel",
+        //     category: "mixed-media",
+        //     image: "images/pratima-tandel-min.jpg",
+        //     description: "Rich textural work that tells stories through layers and materiality."
+        // },
+        // {
+        //     id: 11,
+        //     title: "Geometric Harmony",
+        //     artist: "Gallery Collection",
+        //     category: "paintings",
+        //     image: "images/art-work-1-min.png",
+        //     description: "Abstract geometric composition exploring balance and visual rhythm."
+        // },
+        // {
+        //     id: 12,
+        //     title: "Contemporary Vision",
+        //     artist: "Gallery Collection",
+        //     category: "paintings",
+        //     image: "images/art-work-2-min.png",
+        //     description: "Large-scale contemporary painting that challenges traditional perspectives."
+        // }
+      ];
+
+      // DOM elements
+      const galleryGrid = document.getElementById("galleryGrid");
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const modal = document.getElementById("galleryModal");
+      const modalImage = document.getElementById("modalImage");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalDescription = document.getElementById("modalDescription");
+      const modalClose = document.getElementById("modalClose");
+      const loader = document.getElementById("loader");
+
+      // Initialize gallery
+      function initGallery() {
+        renderGallery("all");
+        setupFilters();
+        setupModal();
+        hideLoader();
+      }
+
+      // Render gallery items
+      function renderGallery(filter) {
+        const filteredData =
+          filter === "all"
+            ? galleryData
+            : galleryData.filter((item) => item.category === filter);
+
+        galleryGrid.innerHTML = filteredData
+          .map(
+            (item) => `
+        <div class="gallery-item" data-id="${item.id}">
+          <img src="${item.image}" alt="${item.title}">
+   
+        </div>
+      `,
+          )
+          .join("");
+
+        // Add click listeners to gallery items
+        document.querySelectorAll(".gallery-item").forEach((item) => {
+          item.addEventListener("click", () => {
+            const id = parseInt(item.dataset.id);
+            const data = galleryData.find((artwork) => artwork.id === id);
+            openModal(data);
+          });
+        });
+      }
+
+      // Setup filter functionality
+      function setupFilters() {
+        filterBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            // Update active button
+            filterBtns.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            // Filter gallery
+            const filter = btn.dataset.filter;
+            renderGallery(filter);
+          });
+        });
+      }
+
+      // Setup modal functionality
+      function setupModal() {
+        modalClose.addEventListener("click", closeModal);
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) closeModal();
+        });
+      }
+
+      // Open modal with artwork data
+      function openModal(selectedArtwork) {
+        const carouselInner = document.getElementById("carouselInner");
+        carouselInner.innerHTML = galleryData
+          .map(
+            (artwork, index) => `
+    <div class="carousel-item ${
+      artwork.id === selectedArtwork.id ? "active" : ""
+    }">
+      <img src="${artwork.image}" class="d-block w-100" alt="${artwork.title}">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>${artwork.title}</h5>
+        <p>${artwork.description} - by ${artwork.artist}</p>
+      </div>
+    </div>
+  `,
+          )
+          .join("");
+
+        // Show modal
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+
+      // Close modal
+      function closeModal() {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      // Hide loader
+      function hideLoader() {
+        setTimeout(() => {
+          if (loader) {
+            loader.style.display = "none";
+          }
+        }, 1000);
+      }
+
+      // Mobile menu functionality
+      const toggleBtn = document.getElementById("toggleBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const mobileNavbar = document.querySelector(".mobile-navbar");
+      const menuLinks = mobileMenu.querySelectorAll("a");
+
+      let isOpen = false;
+
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+          isOpen = !isOpen;
+          if (isOpen) {
+            mobileMenu.style.right = "0";
+            mobileNavbar.style.display = "none";
+          } else {
+            mobileMenu.style.right = "-100%";
+            mobileNavbar.style.display = "flex";
+          }
+        });
+      }
+
+      // Close mobile menu when any link is clicked
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          isOpen = false;
+          mobileMenu.style.right = "-100%";
+          mobileNavbar.style.display = "flex";
+        });
+      });
+
+      // Initialize when DOM is loaded
+      document.addEventListener("DOMContentLoaded", initGallery);
+    </script>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+<script src="js/cloudinary-config.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/events.js"></script>
+
+  </body>
+</html>
